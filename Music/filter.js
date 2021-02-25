@@ -24,7 +24,7 @@ async execute(message, args, client) {
     //get serverqueue
     const queue = message.client.queue.get(message.guild.id);
     //react with approve emoji
-    message.react("769665713124016128").catch(console.error);
+    message.react("<:emoji_48:814468558871461938>").catch(console.error);
     //if the argslength is null return error
     //if there is already a search return error
     if (message.channel.activeCollector)
@@ -117,7 +117,7 @@ async execute(message, args, client) {
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
       .setColor("#c219d8")
-      .setAuthor("Applying: " + args[0], "https://cdn.discordapp.com/emojis/769935094285860894.gif")).then(msg =>{
+      .setAuthor("Applying: " + args[0], "https://media.discordapp.net/attachments/811185912703614986/814504843061231656/image0.png")).then(msg =>{
         msg.delete({timeout: 2000});
       })
       play(song, message, client, choice);
