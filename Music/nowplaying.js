@@ -44,6 +44,7 @@ execute(message) {
           .setDescription(`[**${song.title}**](${song.url})`)
           .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
           .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("83c0ff")
           
       //if its a stream
       if(ms >= 10000) {
