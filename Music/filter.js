@@ -116,7 +116,7 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("#c219d8")
+      .setColor("83c0ff")
       .setAuthor("Applying: " + args[0], "https://media.discordapp.net/attachments/811185912703614986/814504843061231656/image0.png")).then(msg =>{
         msg.delete({timeout: 2000});
       })
