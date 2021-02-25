@@ -117,7 +117,7 @@ async execute(message, args, client) {
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
       .setColor("83c0ff")
-      .setAuthor("Applying: " + args[0]").then(msg =>{
+      .setAuthor("Applying: " + args[0], "")).then(msg =>{
         msg.delete({timeout: 2000});
       })
       play(song, message, client, choice);
