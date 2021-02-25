@@ -135,6 +135,7 @@ module.exports = {
       const newsong = new MessageEmbed()
         .setTitle("<:emoji_63:814468559823831050> "+song.title)
         .setURL(song.url)
+        .setImgae("+song.title")
         .setColor("83c0ff")
         .setThumbnail(thumb)
         .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
