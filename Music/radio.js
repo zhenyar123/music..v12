@@ -73,7 +73,7 @@
 
     //define the No args Embed, lmao
     let resultsEmbed = new Discord.MessageEmbed()
-        .setTitle(`** <:emoji_49:814468558930182195> Available Radio Stations**`)//
+        .setTitle(`** <:emoji_63:814468559823831050> Available Radio Stations**`)//
         .addFields(
           { name: `*** <:emoji_63:814468559823831050> Standard Radio***`, value: `**1:  ** [\`${Radiostations[1-1].split(" ")[0]}\`](${Radiostations[1-1].split(" ")[1]})
           **2:  ** [\`${Radiostations[2-1].split(" ")[0]}\`](${Radiostations[2-1].split(" ")[1]})
@@ -127,7 +127,7 @@
           { name: `***🇵🇱 Polska RADIO:***`, value: `**33: ** [\`${Radiostations[33-1].split(" ")[0]}\`](${Radiostations[33-1].split(" ")[1]})
   **34: ** [\`${Radiostations[34-1].split(" ")[0]}\`](${Radiostations[34-1].split(" ")[1]})`, inline: true },
         )		
-        .setColor("#c219d8")
+        .setColor("83c0ff")
         .setFooter(`Type: ${prefix}radio <1-34>`,  client.user.displayAvatarURL())
         .setTimestamp();
           //if not guild send this
@@ -136,7 +136,7 @@
       //if no args
       if (args[0] == null) {
         message.channel.send(    new MessageEmbed().setColor("83c0ff")
-        .setDescription(`** <:emoji_49:814468558930182195> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
+        .setDescription(`** <:emoji_63:814468559823831050> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
         message.author.send(new MessageEmbed().setColor("83c0ff")
         .setDescription(`** <:emoji_49:814468558930182195> Sent from <#${message.channel.id}>**`))
