@@ -53,7 +53,7 @@ execute(message) {
       }
       //If its not a stream
       if (ms > 0 && ms<10000) {
-        nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "<:currentposition:770098066552258611>")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
+       
         //send approve msg
         return message.channel.send(nowPlaying);
       }
