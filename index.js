@@ -90,11 +90,12 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("83c0ff")
     .setAuthor("About Zooya Bot.", "https://media.discordapp.net/attachments/811185912703614986/814587397181407232/image0.png")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
+    .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
-**[Support](https://discord.gg/FRZ5vAJ4Rm)** | **[Invite](https://discord.com/api/oauth2/authorize?client_id=792047204361175091&permissions=8&scope=bot)**
+
+[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
 **Owner Bot** :
 Calli4415
@@ -112,6 +113,7 @@ c!
 
     //send the Message
     message.channel.send(embed)
+    message.react("<:emoji_48:814468558871461938>")
   } 
 
   //An embed announcement for everyone but no one knows so fine ^w^
