@@ -141,7 +141,7 @@ message.channel.send(helpEmbed)
         );
         if(!message.guild) return message.author.send(helpEmbed);
           message.author.send(helpEmbed)
-          message.channel.send( new MessageEmbed().setColor("#c219d8")
+          message.channel.send( new MessageEmbed().setColor("#83c0ff")
         .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Commands!**`)
           );
        }
