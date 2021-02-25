@@ -1,3 +1,8 @@
+const { MessageEmbed } = require("discord.js");
+
+  const prefix = ("c!");
+  
+
 module.exports = {
   name: "help",
   aliases: ["h"],
