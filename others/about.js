@@ -18,12 +18,21 @@ module.exports = {
 
    
     .setDescription(`
+**About Zooya.**
+
+[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
+
+Developers Bot:
+Calli4415
+
+Set Status:
+Online 
+
+prefix Zooya:
+{c!}
+
 `)
 
-  .addField("**Name** : ", `» ${client.user.tag} `, true)
-  .addField("**ID Bot** : ", ` ${client.user.id} `, true)
-  .addField("**Guilds** : ", `» ${client.guilds.cache.size}  guilds`, true)
-  .addField("**Developers Bot** : ", `Calli#4415`, true)
   .setThumbnail(message.author.avatarURL());
 
    .setColor("83c0ff");
