@@ -19,7 +19,7 @@ execute(message) {
     //if not in a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("769665713124016128")
+    message.react("<:emoji_48:814468558871461938>")
     //get Server Queue
     const queue = message.client.queue.get(message.guild.id);
     //if nothing playing error
@@ -40,11 +40,11 @@ execute(message) {
     const left = ms - seek;
     //define embed
     let nowPlaying = new MessageEmbed()
-      .setTitle("<:Playing:769665713124016128> Now playing")
-      .setDescription(`[**${song.title}**](${song.url})`)
-      .setThumbnail(song.thumbnail.url)
-      .setColor("<:emoji_48:814468558871461938>")
-      .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
+          .setTitle("**Now playing**")
+          .setDescription(`[**${song.title}**](${song.url})`)
+          .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+          
       //if its a stream
       if(ms >= 10000) {
         nowPlaying.addField("\u200b", "🔴 LIVE", false);
