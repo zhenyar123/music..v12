@@ -135,9 +135,9 @@ module.exports = {
       const newsong = new MessageEmbed()
         .setTitle("<:emoji_63:814468559823831050> "+song.title)
         .setURL(song.url)
-        .setImgae("+song.title")
         .setColor("83c0ff")
         .setThumbnail(thumb)
+         .addField(":emoji_52: Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_50:814468558976581703> Volume:", `\`${queue.volume}\``, true)
 
