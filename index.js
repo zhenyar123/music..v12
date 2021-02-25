@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Guide`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} GuIdis`, { type: "PLAYING"});
    
   
       }, (5000));
