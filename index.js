@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('Nzk3MDE3MTEwNzc2NjQzNjQ1.X_gWBw.PgXx-Mj_LA9MhRsLYM48E_V1v3c');
+client.login('ODAzNjUwNDI2NTcwMDE0NzMw.YBA3yA.pKGd1IRiKbw8h8xxIRzqADvSuak');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -86,7 +86,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("83c0ff")
     .setDescription(saymsg)
     .setFooter("Musicium", client.user.displayAvatarURL())
     //delete the Command
@@ -117,8 +117,8 @@ client.on(`message`, async (message) => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#c219d8")
-      .setTitle(`<:no:770326304473350145> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
+      new MessageEmbed().setColor("83c0ff")
+      .setTitle(`Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -128,8 +128,8 @@ client.on(`message`, async (message) => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#c219d8")
-   .setTitle(`<:no:770326304473350145> There was an error executing that command.`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("83c0ff")
+   .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
 
