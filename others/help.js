@@ -34,7 +34,6 @@ c!filter bassboost - c!filter 8D - c!filter vaporwave - c!filter nightcore - c!f
 
   
    .setColor("83c0ff");
-   helpEmbed.setTimestamp();
    message.react("<:emoji_48:814468558871461938>")
     return message.channel.send(helpEmbed).catch(console.error);
 
