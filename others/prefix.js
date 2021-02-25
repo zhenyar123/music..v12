@@ -23,7 +23,7 @@ module.exports = {
     message.react("<:emoji_48:814468558871461938>");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("83c0ff")
     .setTitle(`Current Prefix: \`${prefix}\``)
     .setFooter('Please provide a new prefix')
     );
