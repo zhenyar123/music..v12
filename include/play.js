@@ -137,7 +137,8 @@ module.exports = {
         .setURL(song.url)
         .setColor("83c0ff")
         .setThumbnail(thumb)
-        .addField(":emoji_62: Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_50:814468558976581703> Volume:", `\`${queue.volume}\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
