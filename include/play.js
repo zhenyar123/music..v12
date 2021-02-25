@@ -137,20 +137,18 @@ module.exports = {
         .setURL(song.url)
         .setColor("83c0ff")
         .setThumbnail(thumb)
-         .addField(":emoji_52: Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+         .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_50:814468558976581703> Volume:", `\`${queue.volume}\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
 
-      await playingMessage.react("⏭"); //skip
-      await playingMessage.react("⏯"); //pause
-      await playingMessage.react("🔄"); //loop
-      await playingMessage.react("⏹"); //stop
-      await playingMessage.react("❓"); //np
-      await playingMessage.react("🎵"); //queue
-      await playingMessage.react("📑"); //lyrics
+      await playingMessage.react("<:emoji_59:814468559454994452>"); //skip
+      await playingMessage.react("<:emoji_55:814468559362588682>"); //pause
+      await playingMessage.react("<:emoji_53:814468559157592125>"); //loop
+      await playingMessage.react("<:emoji_54:814468559237283860>"); //stop
+      await playingMessage.react("<:emoji_61:814468559597207572>"); //np
     } catch (error) {
       console.error(error);
     }
@@ -167,33 +165,9 @@ module.exports = {
       const member = message.guild.member(user);
 
       switch (reaction.emoji.name) {
-        //queue
-        case "🎵":
-          reaction.users.remove(user).catch(console.error);
-          const description = queue.songs.map((song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`);
-
-          let queueEmbed = new MessageEmbed()
-            .setTitle("Music Queue")
-            .setDescription(description)
-            .setColor("#c219d8")
-             ;
-      
-          const splitDescription = splitMessage(description, {
-            maxLength: 2048,
-            char: "\n",
-            prepend: "",
-            append: ""
-          });
-      
-          splitDescription.forEach(async (m) => {
-      
-            queueEmbed.setDescription(m);
-            message.react("✅")
-            message.channel.send(queueEmbed);
-          });
-          break;
+       
         //np
-        case "❓":
+        case "<:emoji_61:814468559597207572>":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
@@ -212,9 +186,9 @@ module.exports = {
         let nowPlaying = new MessageEmbed()
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
-          .setThumbnail(song.thumbnail.url)
-          .setColor("#c219d8")
-          .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
+          .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("83c0ff")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
@@ -230,7 +204,7 @@ module.exports = {
         
         break;
         //skip
-        case "⏭":
+        case "<:emoji_59:814468559454994452>":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -241,37 +215,8 @@ module.exports = {
           collector.stop();
 
           break;
-        //lyrics
-        case "📑":
-        
-          reaction.users.remove(user).catch(console.error);
-          if (!canModifyQueue(member)) return;
-          let lyrics = null;
-          let temEmbed = new MessageEmbed()
-          .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1").setFooter("Lyrics")
-          .setColor("#c219d8")
-          let result = await message.channel.send(temEmbed)
-          try {
-            lyrics = await lyricsFinder(queue.songs[0].title,"");
-            if (!lyrics) lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-          } catch (error) {
-            lyrics = `No lyrics found for ${queue.songs[0].title}.`;
-          }
-      
-          let lyricsEmbed = new MessageEmbed()
-            .setTitle("📑 Lyrics")
-            .setDescription(lyrics)
-            .setColor("#c219d8")
-      
-          if (lyricsEmbed.description.length >= 2048)
-      
-            lyricsEmbed.description = `${lyricsEmbed.description.substr(0, 2045)}...`;
-            message.react("✅");
-          return result.edit(lyricsEmbed).catch(console.error);
-
-          break;
-          //pause
-        case "⏯":
+        //pause
+        case "<:emoji_55:814468559362588682>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -289,7 +234,7 @@ module.exports = {
           }
           break;
           //loop  
-        case "🔄":
+        case "<:emoji_53:814468559157592125>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
@@ -298,7 +243,7 @@ module.exports = {
           queue.textChannel.send(loopembed).catch(console.error);
           break;
           //stop
-        case "⏹":
+        case "<:emoji_54:814468559237283860>":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
