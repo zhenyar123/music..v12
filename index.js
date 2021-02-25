@@ -97,14 +97,14 @@ client.on(`message`, async (message) => {
 
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
-**Owner Bot** :
+**Developers Bot** :
 Calli4415
 
 **Set Status** :
- **Online**
+Online
 
 **Time Create** :
-**25/1/2021**
+25/1/2021
 
 **Prefix Bot** :
 c!
