@@ -81,15 +81,15 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed().setColor("83c0ff").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
-```md
+
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
-    .setAuthor("About Remix Bot.", "https://cdn.discordapp.com/emojis/813397195771740182.gif?v=1")
+    .setColor("83c0ff")
+    .setAuthor("About Zooya Bot.", "https://media.discordapp.net/attachments/811185912703614986/814587397181407232/image0.png")
     .setThumbnail(`https://cdn.discordapp.com/attachments/637301756610740234/811675308536102982/20210217_195031.gif`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
