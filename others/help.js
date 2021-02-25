@@ -28,7 +28,7 @@ module.exports = {
        .setFooter(message.author.username, message.author.displayAvatarURL)
        .setDescription(`**[  SUPPORT  ](https://discord.gg/jcs4XwcExv)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=807519129736839178&permissions=70346817&scope=bot)`)
       .setThumbnail(message.author.avatarURL)
-      .setColor('RANDOM');
+      .setColor('83c0ff');
     //define argstrue to negative
     let ifargstruedothis = -1;
 
