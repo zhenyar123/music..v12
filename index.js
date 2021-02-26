@@ -156,7 +156,7 @@ client.on("guildCreate" , DarkMan => {
     const embed = new Discord.MessageEmbed()
     .setColor("83c0ff")
     .setDescription(saymsg)
-    .setFooter("Musicium", client.user.displayAvatarURL())
+    .setFooter("Zooya", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
