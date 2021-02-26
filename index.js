@@ -125,8 +125,9 @@ c!
     .setColor("83c0ff")
     .setDescription (`
 <:emoji_63:814468559823831050> Links
-[Support](https://discord.gg/FRZ5vAJ4Rm)
-  
+
+[Support](https://discord.gg/mg5BMV8ddU)
+-
 [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=2146959345&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
