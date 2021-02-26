@@ -15,9 +15,10 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setTitle(`<:emoji_62:814468559613722634> | **Zooya**`)
     .setThumbnail(message.author.avatarURL())
     .setDescription(`
+
+<:emoji_62:814468559613722634> **Zooya Bot**
 
 <:emoji_61:814468559597207572> c!play
 <:emoji_61:814468559597207572> c!skip
@@ -44,8 +45,7 @@ module.exports = {
 <:emoji_61:814468559597207572> c!ping
 =================
 <:emoji_63:814468559823831050> Links
-
-[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
+[**Support**](https://discord.gg/CHUKd9z87E) - [**Invite**](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
 
 `)
