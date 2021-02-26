@@ -116,6 +116,28 @@ c!
     message.react("<:emoji_48:814468558871461938>")
   } 
 
+//An suuport announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}support`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("83c0ff")
+    .setDescription (`
+<:emoji_63:814468559823831050> Links
+[Support](https://discord.gg/FRZ5vAJ4Rm)
+  
+[Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=2146959345&scope=bot)`)
+    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setImage(``)
+    .setTitle(`**Support Zooya**`) 
+    .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
+    .setTimestamp()
+    
+    //send the Message
+    message.channel.send(embed)
+    message.react("<:emoji_48:814468558871461938>")
+  }
 
 client.on("guildCreate" , DarkMan => {
   if(DarkMan.memberCount < 300){
