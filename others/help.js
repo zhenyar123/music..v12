@@ -37,7 +37,7 @@ module.exports = {
 <:emoji_61:814468559597207572> c!lyric
 <:emoji_61:814468559597207572> c!radio
 =================
-<:emoji_61:814468559597207572> C!invite
+<:emoji_61:814468559597207572> c!invite
 <:emoji_61:814468559597207572> c!support
 <:emoji_61:814468559597207572> c!about
 <:emoji_61:814468559597207572> c!help
@@ -45,6 +45,7 @@ module.exports = {
 <:emoji_61:814468559597207572> c!ping
 =================
 <:emoji_63:814468559823831050> **Links**
+
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
 
