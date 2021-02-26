@@ -140,7 +140,7 @@ module.exports = {
         .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
          .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<:emoji_50:814468558976581703> Volume:", `\`${queue.volume}\``, true)
+        .addField("<:emoji_50:814468558976581703> Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
