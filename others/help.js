@@ -44,8 +44,8 @@ module.exports = {
 <:emoji_61:814468559597207572> c!uptime
 <:emoji_61:814468559597207572> c!ping
 =================
-<:emoji_63:814468559823831050> Links
-[**Support**](https://discord.gg/CHUKd9z87E) - [**Invite**](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
+<:emoji_63:814468559823831050> **Links**
+[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
 
 `)
