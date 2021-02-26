@@ -135,12 +135,14 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<:Playing:769665713124016128> " + song.title)
-        .setColor("#83c0ff")
-        .setThumbnail(thumb)
+        .setTitle("<:emoji_63:814468559823831050> "+song.title)
         .setURL(song.url)
-        .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
-        .addField("Estimated time until playing:", `\`${estimatedtime}\``, true)
+        .setColor("83c0ff")
+        .setImage(thumb)
+        .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
+         .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_50:814468558976581703> Volume:", `\`100\``, true)
         .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
