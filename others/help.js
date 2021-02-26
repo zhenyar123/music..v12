@@ -37,7 +37,7 @@ module.exports = {
 
 `)
 
-  
+   .setFooter(`Requested | ${message.author.tag}`, message.author.avatarURL())
    .setColor("83c0ff");
    message.react("<:emoji_48:814468558871461938>")
     return message.channel.send(helpEmbed).catch(console.error);
