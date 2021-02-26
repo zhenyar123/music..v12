@@ -15,41 +15,25 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(message.author.avatarURL())
+    .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png `)
+    .setTitle(`**Zooya Help**`)
     .setDescription(`
-
-<a:emoji_5:797912346759659591> **Music Command** <a:emoji_5:797912346759659591>
-
-<:emoji_61:814468559597207572> c!play
-<:emoji_61:814468559597207572> c!skip
-<:emoji_61:814468559597207572> c!skipto
-<:emoji_61:814468559597207572> c!stop
-<:emoji_61:814468559597207572> c!volume
-<:emoji_61:814468559597207572> c!nowplaying
-<:emoji_61:814468559597207572> c!suffle
-<:emoji_61:814468559597207572> c!search
-<:emoji_61:814468559597207572> c!resume
-<:emoji_61:814468559597207572> c!remove
-<:emoji_61:814468559597207572> c!queue
-<:emoji_61:814468559597207572> c!pause
-<:emoji_61:814468559597207572> c!filter
-<:emoji_61:814468559597207572> c!loop
-<:emoji_61:814468559597207572> c!lyric
-<:emoji_61:814468559597207572> c!radio
-
-<a:emoji_5:797912346759659591> **Others** <a:emoji_5:797912346759659591>
-
-<:emoji_61:814468559597207572> c!invite
-<:emoji_61:814468559597207572> c!support
-<:emoji_61:814468559597207572> c!about
-<:emoji_61:814468559597207572> c!help
-<:emoji_61:814468559597207572> c!uptime
-<:emoji_61:814468559597207572> c!ping
-
-<:emoji_63:814468559823831050> **Links**
-
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 
+ **User Commands**
+\`c!invite\` - \`c!support\` - \`c!about\`
+\`c!ping\` - \`c!prefix\` - \`c!uptime\`
+**Music Commands**
+\`c!play\` - \`c!skip\` - \`c!skipto\`
+\`c!stop\` - \`c!volume\` - \`nowplaying\`
+\`c!suffle\` - \`c!search\` - \`c!resume\`
+\`c!remove\` - \`c!queue\` - \`c!filter\`
+\`c!loop\` - \`c!lyric\` - \`c!radio\`
+**Filter Commands**
+\`c!fi bassboost\` - \`c!fi 8D\` - \`c!fi vaporwave\`
+\`c!fi nightcore\` - \`c!fi phaser\` - \`c!fi tremolo\`
+\`c!fi vibrato\` - \`c!fi surrounding\` - \`c!fi pulsator\`
+\`c!fi subboost\` - \`c!fi clear\`
 
 `)
 
