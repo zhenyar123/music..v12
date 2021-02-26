@@ -38,7 +38,7 @@ client.on(`ready`, () => {
       
 
     client.user.setActivity(`Type: ${PREFIX}help - Zooya Is One`, { type: "LISTENING"});
-    client.user.setActivity(`Type: GuIdis ${client.guilds.cache.size}`, { type: "LISTENING"});
+    client.user.setActivity(`Type: GuIdis ${client.guilds.cache.size},Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
   
       }, (5000));
       ////////////////////////////////
