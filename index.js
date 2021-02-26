@@ -116,6 +116,36 @@ c!
     message.react("<:emoji_48:814468558871461938>")
   } 
 
+
+client.on("guildCreate", guild => {
+  client.channels.cache.get("814931778925363210")
+    .send(`<:emoji_35:812962341863424021> **${client.user.tag} JOIN SERVER
+
+                                        
+
+Server name: __${guild.name}__
+
+Server owner: __${guild.owner}__
+
+Server id: __${guild.id}__ 
+
+Server Count: __${guild.memberCount}__**`);
+});
+
+
+client.on("guildDelete", guild => {
+  client.channels.cache.get("814931819395809380")
+    .send(`<:emoji_36:812962358087254037> **${client.user.tag} LEFT SERVER
+
+Server name: __${guild.name}__
+
+Server owner: __${guild.owner}__
+
+Server id: __${guild.id}__ 
+
+Server Count: __${guild.memberCount}__**`);
+});
+
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
     //define saymsg
