@@ -18,7 +18,7 @@ module.exports = {
     .setThumbnail(message.author.avatarURL())
     .setDescription(`
 
-:emoji_5~5: **Music Command** :emoji_5~5:
+<a:emoji_5:797912346759659591> **Music Command** <a:emoji_5:797912346759659591>
 
 <:emoji_61:814468559597207572> c!play
 <:emoji_61:814468559597207572> c!skip
@@ -37,7 +37,7 @@ module.exports = {
 <:emoji_61:814468559597207572> c!lyric
 <:emoji_61:814468559597207572> c!radio
 
-:emoji_5~5: **Others** :emoji_5~5:
+<a:emoji_5:797912346759659591> **Others** <a:emoji_5:797912346759659591>
 
 <:emoji_61:814468559597207572> c!invite
 <:emoji_61:814468559597207572> c!support
