@@ -21,7 +21,7 @@ module.exports = {
 
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 **user Commands**
-c!prefix - c!uptime - c!ping - c!invite
+c!prefix - c!uptime - c!ping - c!invite - c!support
 **Music Commands**
 c!play - c!pause- c!skip - c!queue
 c!resume - c!search - c!volume - c!skipto- c!shuffle - c!remove - c!lyrics - c!loop 
