@@ -26,9 +26,9 @@ module.exports = {
 **Music Commands**
 \`c!play\` - \`c!skip\` - \`c!skipto\`
 \`c!stop\` - \`c!volume\` - \`nowplaying\`
-\`c!suffle\` - \`c!search\` - \`c!resume\`
+\`c!shuffle\` - \`c!search\` - \`c!resume\`
 \`c!remove\` - \`c!queue\` - \`c!filter\`
-\`c!loop\` - \`c!lyric\` - \`c!radio\`
+\`c!loop\` - \`c!lyrics\` - \`c!radio\`
 
 **Links**
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
