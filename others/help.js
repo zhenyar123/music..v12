@@ -19,18 +19,18 @@ module.exports = {
     .setTitle(`**Zooya Help**`)
     .setDescription(`
 
- **User Commands**
+<:emoji_60:814468559475310604> **User Commands**
 \`c!invite\` - \`c!support\` - \`c!about\`
 \`c!ping\` - \`c!prefix\` - \`c!uptime\`
 
-**Music Commands**
+<:emoji_61:814468559597207572> **Music Commands**
 \`c!play\` - \`c!skip\` - \`c!skipto\`
 \`c!stop\` - \`c!volume\` - \`nowplaying\`
 \`c!suffle\` - \`c!search\` - \`c!resume\`
 \`c!remove\` - \`c!queue\` - \`c!filter\`
 \`c!loop\` - \`c!lyric\` - \`c!radio\`
 
-**Links**
+<:emoji_63:814468559823831050> **Links**
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
 `)
 
