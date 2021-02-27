@@ -37,9 +37,8 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - Zooya Is One`, { type: "LISTENING"});
-    client.user.setActivity(`Type: GuIdis ${client.guilds.cache.size},Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
-  
+    client.user.setActivity(`Type: ${PREFIX}help - Calli Is One`, { type: "LISTENING"});
+    
       }, (5000));
       ////////////////////////////////
       ////////////////////////////////
@@ -78,7 +77,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("83c0ff").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("YELLOW").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
 
@@ -88,14 +87,14 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("83c0ff")
-    .setAuthor("About Zooya Bot.", "https://media.discordapp.net/attachments/811185912703614986/814587397181407232/image0.png")
-    .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png `)
+    .setColor("YELLOW")
+    .setAuthor("About Calli Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
+    .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
+[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
 
 **Developers Bot** :
 Calli4415
@@ -107,13 +106,13 @@ Online
 25/1/2021
 
 **Prefix Bot** :
-c!
+c?
 
 `)
 
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_48:814468558871461938>")
+    message.react("<:emoji_74:815251307635015731>")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -122,22 +121,22 @@ c!
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setDescription (`
-<:emoji_63:814468559823831050> Links
+<:emoji_65:815251304070905857> Links
 
 [Support](https://discord.gg/mg5BMV8ddU)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=2146959345&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support Zooya**`) 
+    .setTitle(`**Support Calli**`) 
     .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
     .setTimestamp()
     
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_48:814468558871461938>")
+    message.react("<:emoji_74:815251307635015731>")
   }
 
 client.on("guildCreate" , DarkMan => {
@@ -154,7 +153,7 @@ client.on("guildCreate" , DarkMan => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -184,8 +183,8 @@ client.on("guildCreate" , DarkMan => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("83c0ff")
-      .setTitle(`\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
+      new MessageEmbed().setColor("YELLOW")
+      .setTitle(`<:emoji_74:815251307635015731>\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
  }
@@ -195,7 +194,7 @@ client.on("guildCreate" , DarkMan => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("83c0ff")
+   message.reply( new MessageEmbed().setColor("YELLOW")
    .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
