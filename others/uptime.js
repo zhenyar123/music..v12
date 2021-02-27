@@ -17,8 +17,8 @@ module.exports = {
     let minutes = Math.floor(client.uptime / 60000) % 60;
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
-    message.react("<:emoji_48:814468558871461938>");
-    return message.channel.send(new MessageEmbed().setColor("83c0ff").setTitle(`<:emoji_48:814468558871461938>\`Zooya Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    message.react("<:emoji_74:815251307635015731>");
+    return message.channel.send(new MessageEmbed().setColor("YELLOW").setTitle(`<:emoji_74:815251307635015731>\`Calli Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
