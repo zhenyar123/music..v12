@@ -19,7 +19,7 @@ execute(message, args) {
     //if not in a guild return
     if (!message.guild) return;
     //react with approve
-    message.react("<:emoji_48:814468558871461938>").catch(console.error);
+    message.react("<:emoji_74:815251307635015731>").catch(console.error);
     //if no args return error
     if (!args.length)
       return attentionembed(message, `Try: ${message.client.prefix}${module.exports.name} <Queue Number>`)
@@ -52,7 +52,7 @@ execute(message, args) {
     //Send approve
     queue.textChannel.send(
       new MessageEmbed()
-        .setColor("83c0ff")
+        .setColor("YELLOW")
         .setAuthor(`${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "")
     ).catch(console.error);
   }
