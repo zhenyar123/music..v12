@@ -17,12 +17,12 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setDescription(`
 
-<:emoji_63:814468559823831050> [Click here](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=2146959345&scope=bot) **to invite the bot.**
+<:emoji_65:815251304070905857> [Click here](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot) **to invite the bot.**
 `)
 
   
-   .setColor("83c0ff");
-   message.react("<:emoji_48:814468558871461938>")
+   .setColor("YELLOW");
+   message.react("<:emoji_74:815251307635015731>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
