@@ -135,7 +135,7 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<a:emoji_30:815251307794399252> "+song.title)
+        .setTitle("<:emoji_65:815251304070905857> "+song.title)
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
