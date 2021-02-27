@@ -34,7 +34,7 @@ module.exports = {
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
 `)
 
-   .setFooter(`${message.author.tag}`, message.author.avatarURL())
+   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("YELLOW");
    message.react("<:emoji_74:815251307635015731>")
     return message.channel.send(helpEmbed).catch(console.error);
