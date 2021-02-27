@@ -31,7 +31,7 @@ module.exports = {
     let queueEmbed = new MessageEmbed()
       .setTitle("Music Queue")
       .setDescription(description)
-      .setColor("83c0ff");
+      .setColor("YELLOW");
     //split the description
     const splitDescription = splitMessage(description, {
       maxLength: 2048,
@@ -44,7 +44,7 @@ module.exports = {
       //(over)write embed description
       queueEmbed.setDescription(m);
       //react with emoji
-      message.react("<:emoji_48:814468558871461938>")
+      message.react("<:emoji_74:815251307635015731>")
       //send embed
       message.channel.send(queueEmbed);
     });
