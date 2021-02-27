@@ -30,8 +30,11 @@ module.exports = {
 \`c!loop\` - \`c!lyric\` - \`c!radio\`
 
 <:emoji_63:814468559823831050> **Links**
-[Click Here](https://discord.gg/CHUKd9z87E) \`Support Zooya\`
-[Click Here](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot) \`Invite Zooya\`
+[Click Here](https://discord.gg/CHUKd9z87E)
+\`Support Zooya\`
+-
+[Click Here](https://discord.com/api/oauth2/authorize?client_id=803650426570014730&permissions=8&scope=bot)
+\`Invite Zooya\`
 `)
 
    .setFooter(`${message.author.tag}`, message.author.avatarURL())
