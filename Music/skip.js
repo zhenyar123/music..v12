@@ -19,7 +19,7 @@ execute(message) {
     //if not in a guild retunr
     if (!message.guild) return;
     //react with approve emoji
-    message.react("<:emoji_48:814468558871461938>").catch(console.error);
+    message.react("<:emoji_74:815251307635015731>").catch(console.error);
     //get the queue
     const queue = message.client.queue.get(message.guild.id);
     //if no Queue return error
@@ -33,7 +33,7 @@ execute(message) {
     queue.connection.dispatcher.end();
     //send approve message
     queue.textChannel.send(
-      new MessageEmbed().setColor("83c0ff").setAuthor(`${message.author.username} skipped the song.`, "")
+      new MessageEmbed().setColor("YELLOW").setAuthor(`${message.author.username} skipped the song.`, "")
     ).catch(console.error);
   }
 };
