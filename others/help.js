@@ -30,7 +30,7 @@ module.exports = {
 \`c!remove\` - \`c!queue\` - \`c!filter\`
 \`c!loop\` - \`c!lyric\` - \`c!radio\`
 
-<:emoji_63:814468559823831050> **Links**
+**Links**
 [Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
 `)
 
