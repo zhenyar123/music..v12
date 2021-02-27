@@ -25,10 +25,10 @@ module.exports = {
       //pause the music
       queue.connection.dispatcher.pause(true);
       //define the pause embed
-      const pausemebed = new MessageEmbed().setColor("83c0ff")
+      const pausemebed = new MessageEmbed().setColor("YELLOW")
       .setAuthor(`${message.author.username} paused the music.`, "")
       //react with approve emoji
-      message.react("<:emoji_48:814468558871461938>")
+      message.react("<:emoji_74:815251307635015731>")
       //return message
       return queue.textChannel.send(pausemebed).catch(console.error);
     }
