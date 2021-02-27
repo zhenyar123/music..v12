@@ -143,7 +143,7 @@ serverQueue.songs.push(song);
          .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_72:815251305874194482> Volume:", `\`100\``, true)
-        .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
+        .addField("<:emoji_73:815251306268328000> Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
         .catch(console.error);
