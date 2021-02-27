@@ -91,7 +91,7 @@ async execute(message, args, client) {
         //fires if not valid input
         varforfilter = 404;
         message.channel.send(new MessageEmbed()
-        .setColor("#c219d8")
+        .setColor("YELLOW")
         .setTitle("Not a valid Filter, use one of those:")
         .setDescription(`
         \`bassboost\`
