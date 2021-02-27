@@ -20,26 +20,26 @@ module.exports = {
     if(prefix === null) prefix = PREFIX;
 
     //react with approve emoji
-    message.react("<:emoji_48:814468558871461938>");
+    message.react("<:emoji_74:815251307635015731>");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setTitle(`Current Prefix: \`${prefix}\``)
     .setFooter('Please provide a new prefix')
     );
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply(new MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setTitle(`You don\'t have permission for this Command!`)
     );
 
     if(args[1]) return message.channel.send(new MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setTitle(`'The prefix can\'t have two spaces'`));
 
     db.set(`prefix_${message.guild.id}`, args[0])
 
     message.channel.send(new MessageEmbed()
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     .setTitle(`Successfully set new prefix to **${args[0]}**`))
   }
 }
