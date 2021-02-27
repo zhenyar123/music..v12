@@ -16,11 +16,11 @@ module.exports = {
         }
 
     let resultsEmbed = new MessageEmbed()
-      .setTitle("" + titel)
-      .setColor("83c0ff")
+      .setTitle("<:emoji_74:815251307635015731>" + titel)
+      .setColor("YELLOW")
       
       message.channel.send(resultsEmbed);
-      message.react("<:emoji_48:814468558871461938>")
+      message.react("<:emoji_74:815251307635015731>")
     return;
 
   }
