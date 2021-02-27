@@ -127,7 +127,7 @@
           { name: `***🇵🇱 Polska RADIO:***`, value: `**33: ** [\`${Radiostations[33-1].split(" ")[0]}\`](${Radiostations[33-1].split(" ")[1]})
   **34: ** [\`${Radiostations[34-1].split(" ")[0]}\`](${Radiostations[34-1].split(" ")[1]})`, inline: true },
         )		
-        .setColor("83c0ff")
+        .setColor("YELLOW")
         .setFooter(`Type: ${prefix}radio <1-34>`,  client.user.displayAvatarURL())
         .setTimestamp();
           //if not guild send this
