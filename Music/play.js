@@ -139,7 +139,7 @@ serverQueue.songs.push(song);
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
-        .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
+        .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266046658347048/image0.png`)
          .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_72:815251305874194482> Volume:", `\`100\``, true)
