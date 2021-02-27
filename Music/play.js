@@ -58,11 +58,11 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("YELLOW")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_64:814481852181512224> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("YELLOW")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_64:814481852181512224> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
@@ -71,11 +71,11 @@ const search = args.join(" ");
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("YELLOW")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_64:814481852181512224> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("YELLOW")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_64:814481852181512224> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
@@ -135,7 +135,7 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<:emoji_63:814468559823831050> "+song.title)
+        .setTitle("<a:emoji_30:815251307794399252> "+song.title)
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
