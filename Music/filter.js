@@ -104,7 +104,7 @@ async execute(message, args, client) {
         \`surrounding\`
         \`pulsator\`
         \`subboost\`
-        \`clear\`   ---  removes all filters`)
+        \`clear\``)
         .setFooter(`Example: ${PREFIX}filter bassboost`)
         )
         break;
