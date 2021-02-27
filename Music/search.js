@@ -23,7 +23,7 @@ async execute(message,args,client) {
      //get serverqueue
      const serverQueue = message.client.queue.get(message.guild.id);
     //react with approve emoji
-    message.react("<:emoji_48:814468558871461938>").catch(console.error);
+    message.react("<:emoji_74:815251307635015731>").catch(console.error);
     //if the argslength is null return error
     if (!args.length)
       return attentionembed(message,`Usage: ${message.client.prefix}${module.exports.name} <Video Name>`)
@@ -41,10 +41,10 @@ async execute(message,args,client) {
     //define a temporary Loading Embed
     let temEmbed = new MessageEmbed()
     .setAuthor("Searching...", "")
-    .setColor("83c0ff")
+    .setColor("YELLOW")
     //define the Result Embed
     let resultsEmbed = new MessageEmbed()
-      .setTitle("<:emoji_63:814468559823831050> Results for: ")
+      .setTitle("Results for: ")
       .setDescription(`\`${search}\``)
       .setColor("83c0ff")
       .setFooter("Response with your favorite number", client.user.displayAvatarURL() )
