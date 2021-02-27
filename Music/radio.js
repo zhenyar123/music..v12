@@ -73,14 +73,14 @@
 
     //define the No args Embed, lmao
     let resultsEmbed = new Discord.MessageEmbed()
-        .setTitle(`** <:emoji_63:814468559823831050> Available Radio Stations**`)//
+        .setTitle(`** <:emoji_65:815251304070905857> Available Radio Stations**`)//
         .addFields(
-          { name: `*** <:emoji_63:814468559823831050> Standard Radio***`, value: `**1:  ** [\`${Radiostations[1-1].split(" ")[0]}\`](${Radiostations[1-1].split(" ")[1]})
+          { name: `*** <:emoji_65:815251304070905857> Standard Radio***`, value: `**1:  ** [\`${Radiostations[1-1].split(" ")[0]}\`](${Radiostations[1-1].split(" ")[1]})
           **2:  ** [\`${Radiostations[2-1].split(" ")[0]}\`](${Radiostations[2-1].split(" ")[1]})
           **3:  ** [\`${Radiostations[3-1].split(" ")[0]}\`](${Radiostations[3-1].split(" ")[1]})
           **4:  ** [\`${Radiostations[4-1].split(" ")[0]}\`](${Radiostations[4-1].split(" ")[1]})
           **5:  ** [\`${Radiostations[5-1].split(" ")[0]}\`](${Radiostations[5-1].split(" ")[1]})
-          ` , inline: true}, { name: `*** <:emoji_63:814468559823831050> Standard Radio***`, value: `**6:  ** [\`${Radiostations[6-1].split(" ")[0]}\`](${Radiostations[6-1].split(" ")[1]})
+          ` , inline: true}, { name: `*** <:emoji_65:815251304070905857> Standard Radio***`, value: `**6:  ** [\`${Radiostations[6-1].split(" ")[0]}\`](${Radiostations[6-1].split(" ")[1]})
           **7:  ** [\`${Radiostations[7-1].split(" ")[0]}\`](${Radiostations[7-1].split(" ")[1]})
           **8:  ** [\`${Radiostations[8-1].split(" ")[0]}\`](${Radiostations[8-1].split(" ")[1]})
           **9:  ** [\`${Radiostations[9-1].split(" ")[0]}\`](${Radiostations[9-1].split(" ")[1]})
@@ -135,11 +135,11 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("83c0ff")
-        .setDescription(`** <:emoji_63:814468559823831050> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
+        message.channel.send(    new MessageEmbed().setColor("YELLOW")
+        .setDescription(`** <:emoji_65:815251304070905857> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
-        message.author.send(new MessageEmbed().setColor("83c0ff")
-        .setDescription(`** <:emoji_63:814468559823831050> Sent from <#${message.channel.id}>**`))
+        message.author.send(new MessageEmbed().setColor("YELLOW")
+        .setDescription(`** <:emoji_65:815251304070905857> Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
     const { channel } = message.member.voice;
@@ -163,7 +163,7 @@
         channel.leave();
         return message.reply(
         new MessageEmbed()
-        .setColor("#ff0e7a")
+        .setColor("YELLOW")
         .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``)
       );}
 
@@ -180,7 +180,7 @@
   if(Number(i) === 35) {
     channel.leave();
     return message.reply(  new MessageEmbed()
-  .setColor("#ff0e7a")
+  .setColor("YELLOW")
   .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``));}
   //define the Radio Args like title and url
   const args2 = Radiostations[i-1].split(` `);
@@ -215,12 +215,12 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("83c0ff")
-  .setDescription(`** <:emoji_49:814468558930182195> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
+  message.channel.send(    new MessageEmbed().setColor("YELLOW")
+  .setDescription(`** <:emoji_67:815251304162394203> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("83c0ff")
-  .setDescription(`** <:emoji_49:814468558930182195> Searching <:emoji_64:814481852181512224> \`${Radiostations[i-1].split(" ")[0]}\`**`));
+  message.channel.send(new MessageEmbed().setColor("YELLOW")
+  .setDescription(`** <:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
   await queueConstruct.connection.voice.setDeaf(true);
@@ -251,8 +251,8 @@
     serverQueue.songs.push(song);
     //the new song embed
     const newsong = new MessageEmbed()
-      .setTitle("<:emoji_63:814468559823831050> " + song.title)
-      .setColor("83c0ff")
+      .setTitle("<:emoji_65:815251304070905857> " + song.title)
+      .setColor("YELLOW")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
