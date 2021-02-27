@@ -24,7 +24,7 @@ async execute(message, args, client) {
     //get serverqueue
     const queue = message.client.queue.get(message.guild.id);
     //react with approve emoji
-    message.react("<:emoji_48:814468558871461938>").catch(console.error);
+    message.react("<:emoji_74:815251307635015731>").catch(console.error);
     //if the argslength is null return error
     //if there is already a search return error
     if (message.channel.activeCollector)
@@ -116,7 +116,7 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("83c0ff")
+      .setColor("YELLOW")
       .setAuthor("Applying: " + args[0], "")).then(msg =>{
         msg.delete({timeout: 2000});
       })
