@@ -42,7 +42,7 @@ execute(message) {
     let nowPlaying = new MessageEmbed()
           .setTitle("**Now playing**")
           .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("<:emoji_73:815251306268328000> Length:", `\`${song.duration} Minutes\``, true)
+          .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
           .setColor("YELLOW")
           
       //if its a stream
