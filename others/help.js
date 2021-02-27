@@ -16,7 +16,6 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png `)
-    .setTitle(`**Zooya Help**`)
     .setDescription(`
 
 <:emoji_60:814468559475310604> **User Commands**
