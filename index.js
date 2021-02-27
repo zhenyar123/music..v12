@@ -186,7 +186,7 @@ client.on("guildCreate" , DarkMan => {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("83c0ff")
-      .setTitle(`Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
+      .setTitle(`\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\`!`)    
      );
    }
  }
