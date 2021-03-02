@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - Calli Is One`, { type: "LISTENING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Zooya Is One`, { type: "LISTENING"});
     
       }, (5000));
       ////////////////////////////////
