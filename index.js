@@ -139,12 +139,6 @@ c?
     message.react("<:emoji_74:815251307635015731>")
   }
 
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 300){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
 
 
   //An embed announcement for everyone but no one knows so fine ^w^
