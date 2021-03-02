@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("<:emoji_74:815251307635015731>");
-    return message.channel.send(new MessageEmbed().setColor("YELLOW").setTitle(`<:emoji_74:815251307635015731>\`Calli Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("YELLOW").setTitle(`<:emoji_74:815251307635015731>\`Zooya Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
