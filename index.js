@@ -97,7 +97,7 @@ client.on(`message`, async (message) => {
 [Support](https://discord.gg/5aENC4fNVj) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)
 
 **Developers Bot** :
-Calli4415
+@HM ✵ CATATAᵍᵒᵒᵈ ˢᵉʳᵛᵉʳ#8788 - @AVYAR ヽᵇˡᵃᶜᵏ ᵈᵉᵛᵉˡᵒᵖᵉʳ#4293
 
 **Set Status** :
 Online
