@@ -88,13 +88,13 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .setAuthor("About Calli Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
+    .setAuthor("About Zooya Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
     .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
+[Support](https://discord.gg/5aENC4fNVj) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)
 
 **Developers Bot** :
 Calli4415
@@ -125,12 +125,12 @@ c?
     .setDescription (`
 <:emoji_65:815251304070905857> Links
 
-[Support](https://discord.gg/mg5BMV8ddU)
+[Support](https://discord.gg/5aENC4fNVj)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support Calli**`) 
+    .setTitle(`**Support Zooya**`) 
     .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
     .setTimestamp()
     
