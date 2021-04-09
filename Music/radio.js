@@ -136,10 +136,10 @@
       //if no args
       if (args[0] == null) {
         message.channel.send(    new MessageEmbed().setColor("YELLOW")
-        .setDescription(`** <:emoji_65:815251304070905857> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
+        .setDescription(`** 🎼 ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
         message.author.send(new MessageEmbed().setColor("YELLOW")
-        .setDescription(`** <:emoji_65:815251304070905857> Sent from <#${message.channel.id}>**`))
+        .setDescription(`** 🎼 Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
     const { channel } = message.member.voice;
@@ -216,11 +216,11 @@
   //Send info message for joining 
   if(!serverQueue)
   message.channel.send(    new MessageEmbed().setColor("YELLOW")
-  .setDescription(`** <:emoji_67:815251304162394203> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
+  .setDescription(`** 🎼 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
   message.channel.send(new MessageEmbed().setColor("YELLOW")
-  .setDescription(`** <:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${Radiostations[i-1].split(" ")[0]}\`**`));
+  .setDescription(`** 🎼 Searching <:emoji_75:815251307807375381> \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
   await queueConstruct.connection.voice.setDeaf(true);
@@ -251,7 +251,7 @@
     serverQueue.songs.push(song);
     //the new song embed
     const newsong = new MessageEmbed()
-      .setTitle("<:emoji_65:815251304070905857> " + song.title)
+      .setTitle("🎼 " + song.title)
       .setColor("YELLOW")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
