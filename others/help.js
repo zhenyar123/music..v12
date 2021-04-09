@@ -36,7 +36,7 @@ module.exports = {
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("YELLOW");
-   message.react("")
+   message.react("<:setting:830141142687285298>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
