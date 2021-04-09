@@ -24,7 +24,7 @@ async execute(message, args, client) {
     //get serverqueue
     const queue = message.client.queue.get(message.guild.id);
     //react with approve emoji
-    message.react("<:emoji_74:815251307635015731>").catch(console.error);
+    message.react("").catch(console.error);
     //if the argslength is null return error
     //if there is already a search return error
     if (message.channel.activeCollector)
