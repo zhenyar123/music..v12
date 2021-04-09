@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('Nzk0MzA3MDM3MDYwMjY4MDUz.X-46Ew.AL82x_3lHBaUb_g16Bk684Nnv4o');
+client.login('ODMwMTM3Mzc1MDEwOTc5ODcw.YHCTrQ.H1OQcEqwYb9NGamvNUGt0eRyK4Y');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,7 +37,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - Zooya Is One`, { type: "LISTENING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Music Is One`, { type: "LISTENING"});
     client.user.setActivity(`Type: GuIdis ${client.guilds.cache.size},Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
       }, (5000));
       ////////////////////////////////
@@ -94,10 +94,10 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/5aENC4fNVj) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)
+[Support](https://discord.gg/tzkTPQBRde) - [Invite](https://discord.com/api/oauth2/authorize?client_id=830137375010979870&permissions=8&scope=bot)
 
 **Developers Bot** :
-CATATA#8788 - AVYAR#4293
+KILLUA
 
 **Set Status** :
 Online
@@ -112,7 +112,7 @@ c?
 
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_74:815251307635015731>")
+    message.react("<:verify:830139108403576833>")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -123,11 +123,11 @@ c?
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
     .setDescription (`
-<:emoji_65:815251304070905857> Links
+ Links
 
-[Support](https://discord.gg/5aENC4fNVj)
+[Support](https://discord.gg/tzkTPQBRde)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=830137375010979870&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**Support Zooya**`) 
@@ -136,7 +136,7 @@ c?
     
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_74:815251307635015731>")
+    message.react("<:zooya:830141606026805278>")
   }
 
 
@@ -178,7 +178,7 @@ c?
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("YELLOW")
-      .setTitle(`<:emoji_74:815251307635015731>\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
+      .setTitle(`\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
  }
@@ -202,4 +202,4 @@ function delay(delayInms) {
  });
 }
 
-//Bot coded by Tomato#6966 
+//Bot coded by  
