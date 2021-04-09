@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("<:setting:830141142687285298>");
-    return message.channel.send(new MessageEmbed().setColor("YELLOW").setTitle(`<:setting:830141142687285298>`Zooya Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("YELLOW").setTitle(`<:setting:830141142687285298>\Zooya Uptime\`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
