@@ -31,12 +31,12 @@ module.exports = {
 \`c?loop\` - \`c?lyrics\` - \`c?radio\`
 
 **Links**
-[Support](https://discord.gg/5aENC4fNVj) - [Invite](https://discord.com/api/oauth2/authorize?client_id=803965149941071875&permissions=8&scope=bot)
+[Support](https://discord.gg/tzkTPQBRde) - [Invite](https://discord.com/api/oauth2/authorize?client_id=830137375010979870&permissions=8&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("YELLOW");
-   message.react("<:emoji_74:815251307635015731>")
+   message.react("")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
