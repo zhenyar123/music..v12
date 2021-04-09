@@ -19,7 +19,7 @@ execute(message,args,client) {
     //if not in a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("<:emoji_74:815251307635015731>").catch(console.error);
+    message.react("").catch(console.error);
     //get the Queue
     const queue = message.client.queue.get(message.guild.id);
     //if no queue return error
