@@ -106,7 +106,7 @@ Online
 25/1/2021
 
 **Prefix Bot** :
-c?
++p
 
 `)
 
